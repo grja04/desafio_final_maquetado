@@ -1,0 +1,178 @@
+<div>
+  <header class="principal_header d-none d-md-flex align-items-center justify-content-between">
+    <h4 class="post-title"><a href="post.html">Posts</a></h4>
+    <ul class="nav nav-pills lg-3" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link" id="pills-feed-tab" data-toggle="pill" href="#pills-feed" role="tab"
+          aria-controls="pills-feed" aria-selected="true">Feed</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-week-tab" data-toggle="pill" href="#pills-week" role="tab"
+          aria-controls="pills-week" aria-selected="false">Week</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-month-tab" data-toggle="pill" href="#pills-month" role="tab"
+          aria-controls="pills-month" aria-selected="false">Month</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-year-tab" data-toggle="pill" href="#pills-year" role="tab"
+          aria-controls="pills-year" aria-selected="true">Year</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-infinity-tab" data-toggle="pill" href="#pills-infinity" role="tab"
+          aria-controls="pills-infinity" aria-selected="false">Infinity</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-latest-tab" data-toggle="pill" href="#pills-latest" role="tab"
+          aria-controls="pills-latest" aria-selected="false">Latest</a>
+      </li>
+    </ul>
+    <a href="#" class="rayo d-none d-md-flex d-lg-none" onclick="on()"><img src="../images/icon_nav/rayo_nav.svg"
+        alt="" /></a>
+  </header>
+
+  <header class="d-flex d-md-none items-center justify-content-center mobile">
+    <a href="#" onclick="on()"><img src="../images/icon_nav/icon_first_aside.svg" alt="" /></a>
+    <div class="col-8 d-flex flex-nowrap justify-content-between align-items-center">
+      <h5 class="post-title">Posts</h5>
+      <select class="" name="Feed" id="feed-filter-select" onclick="changeView(this.value)">
+        <option value="feed">Feed</option>
+        <option value="feed">Week</option>
+        <option value="feed">Month</option>
+        <option value="feed">Year</option>
+        <option value="feed">Infinity</option>
+        <option value="feed">Latest</option>
+      </select>
+    </div>
+    <a href="#" class="rayo" onclick="on()"><img src="../images/icon_nav/rayo_nav.svg" alt="" /></a>
+  </header>
+
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade active show" id="pills-feed" role="tabpanel" aria-labelledby="pills-feed-tab">
+
+      <div class="card">
+        <img class="card-img-top" src="../images/articles/feed1.jpg" alt="Card image cap" />
+        <div class="card-body">
+          <span class=""><img class="profile_min" src="../images/profile/p6.jpg" alt="" /></span>
+          <div class="info_personal d-inline-block flex-column">
+            <span class="card-text d-block name"><a class="">Teresa Holfeld</a></span>
+            <span class="card-text d-block date"><a class="">Nov 2 (6 days ago)</a></span>
+          </div>
+
+          <div class="content-center">
+            <h1 class="card-title mt-3">
+              <a href="#">Functions, Parameters and Return Values</a>
+            </h1>
+            <div class="hashtags">
+              <a href=""><span class="crayon">#</span>beginners</a>
+              <a href=""><span class="crayon">#</span>codenewbie</a>
+              <a href=""><span class="crayon">#</span>webdev</a>
+              <a href=""><span class="crayon">#</span>programming</a>
+            </div>
+
+            <div class="card-b-content d-flex justify-content-between align-items-center">
+              <div class="icon-right">
+                <a href="">
+                  <img src="../images/icon_cards/icono_corazon.svg" alt="" />
+                  <span>8 reaction</span>
+                </a>
+                <a href="">
+                  <img src="../images/icon_cards/icon_comment.svg" alt="" />
+                  <span>Add comment</span>
+                </a>
+              </div>
+
+              <div class="icon-left">
+                <small class="text-muted timer">1 min read</small>
+                <button type="button" class="btn btn-less-light" onclick="clickSave(this)">
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <span class=""><img class="profile_min" src="../images/profile/p6.jpg" alt="" /></span>
+          <div class="info_personal d-inline-block flex-column">
+            <span class="card-text d-block name"><a class="">Teresa Holfeld</a></span>
+            <span class="card-text d-block date"><a class="">Nov 2 (6 days ago)</a></span>
+          </div>
+          <div class="content-center">
+            <h1 class="card-title mt-3">
+              <a href="#">Functions, Parameters and Return Values</a>
+            </h1>
+            <div class="hashtags">
+              <a href=""><span class="crayon">#</span>beginners</a>
+              <a href=""><span class="crayon">#</span>codenewbie</a>
+              <a href=""><span class="crayon">#</span>webdev</a>
+              <a href=""><span class="crayon">#</span>programming </a>
+            </div>
+
+            <div class="card-b-content d-flex justify-content-between align-items-center">
+              <div class="icon-right">
+                <a href="">
+                  <img src="../images/icon_cards/icono_corazon.svg" alt="" />
+                  <span>8 reaction</span>
+                </a>
+                <a href="">
+                  <img src="../images/icon_cards/icon_comment.svg" alt="" />
+                  <span>Add comment</span>
+                </a>
+              </div>
+
+              <div class="icon-left">
+                <small class="text-muted timer">1 min read</small>
+                <button type="button" class="btn btn-less-light" onclick="clickSave(this)">
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal para la captura del post  -->
+<div class="modal fade" id="writeAPostModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Escribe tu post</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Autor</label>
+            <input type="text" class="form-control" id="Author" aria-describedby="emailHelp"
+              placeholder="Escribe tu nombre y apellido" />
+            <label for="exampleInputEmail1">Titulo</label>
+            <input type="text" class="form-control" id="Title" aria-describedby="emailHelp"
+              placeholder="Cual es el titulo del post" />
+            <label for="exampleInputEmail1">Contenido</label>
+            <input type="text" class="form-control" id="Text" aria-describedby="emailHelp"
+              placeholder="Escribe el contenido del post" />
+            <label for="exampleInputEmail1">Tags</label>
+            <input type="text" class="form-control" id="tags" aria-describedby="emailHelp"
+              placeholder="#Escribe 3 tags" />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary" id="saveInfoButton">
+          Save changes
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
